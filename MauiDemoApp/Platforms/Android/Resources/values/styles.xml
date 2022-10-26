@@ -1,0 +1,5 @@
+﻿<resources>
+    <style name="Theme.PdfView.SelectedTheme" parent="@style/Theme.PdfView.Light">
+        <item name="pdfView_actionBarTint">@color/colorPrimary</item>
+    </style>
+</resources>

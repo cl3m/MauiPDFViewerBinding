@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.PdfView.SelectedTheme" parent="@style/Theme.PdfView.Light">
+        <item name="pdfView_actionBarTint">@color/colorPrimary</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+</resources>
