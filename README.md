@@ -23,11 +23,11 @@ Build and run the project directly. The framework are already build.
 
 ### Android Binding
 
-Run *Android.Native/build.sh* to rebuild/modify the binding framework. You can open the binding project with android studio to test. There is an android app there. Copy the jars that are needed to Android.Binding. 
+Run *build.sh* in Android.Native to rebuild/modify the binding framework. You can open the binding project with android studio to test. There is an android app there. Copy the jars that are needed to Android.Binding. 
 
 ### iOS Binding
 
-Run *iOS.Native/build.sh* to rebuild/modify the binding framework. You can open the binding xcodeproj with xcode to test. Copy the xcframework that are neaded to iOS.Binding. 
+Run *build.sh* in iOS.Native to rebuild/modify the binding framework. You can open the binding xcodeproj with xcode to test. Copy the xcframework that are neaded to iOS.Binding. 
 
 ## More
 
