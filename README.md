@@ -27,7 +27,7 @@ Run *build.sh* in Android.Native to rebuild/modify the binding framework. You ca
 
 ### iOS Binding
 
-Run *build.sh* in iOS.Native to rebuild/modify the binding framework. You can open the binding xcodeproj with xcode to test. Copy the xcframework that are neaded to iOS.Binding. 
+Run *build.sh* in iOS.Native to rebuild/modify the binding framework. Sharpie does make an error but the file is generated correctly. You can open the binding xcodeproj with xcode to test. Copy the xcframework that are neaded to iOS.Binding. 
 
 ## More
 
