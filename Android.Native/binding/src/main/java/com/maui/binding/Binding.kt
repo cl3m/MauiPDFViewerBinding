@@ -1,7 +1,10 @@
 package com.maui.binding
 
 import android.app.Activity
+import android.content.Context
 import android.content.Intent
+import android.view.View
+import com.rajat.pdfviewer.PdfRendererView
 import com.rajat.pdfviewer.PdfViewerActivity
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
@@ -21,5 +24,16 @@ class Binding {
         val intent = PdfViewerActivity.launchPdfFromUrl(activity.baseContext, url, title, directoryName = null, enableDownload = false)
         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         activity.startActivity(intent)
+    }
+
+    fun createPDFView(context: Context): View {
+        val pdfView = PdfRendererView(context)
+        return pdfView
+    }
+
+    fun setPDFViewURL(view: View, url: String) {
+        if (view is PdfRendererView) {
+            view.initWithUrl(url)
+        }
     }
 }

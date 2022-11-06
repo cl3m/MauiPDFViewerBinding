@@ -1,4 +1,5 @@
 using Foundation;
+using UIKit;
 
 namespace iOS.Binding
 {
@@ -16,5 +17,13 @@ namespace iOS.Binding
 		// -(void)openPDFWithTitle:(NSString * _Nonnull)title url:(NSString * _Nonnull)url;
 		[Export ("openPDFWithTitle:url:")]
 		void OpenPDFWithTitle (string title, string url);
+
+		// -(UIView * _Nonnull)createPDFView __attribute__((warn_unused_result("")));
+		[Export ("createPDFView")]
+		UIView CreatePDFView { get; }
+
+		// -(void)setPDFViewURLWithView:(UIView * _Nonnull)view url:(NSString * _Nonnull)url;
+		[Export ("setPDFViewURLWithView:url:")]
+		void SetPDFViewURLWithView (UIView view, string url);
 	}
 }

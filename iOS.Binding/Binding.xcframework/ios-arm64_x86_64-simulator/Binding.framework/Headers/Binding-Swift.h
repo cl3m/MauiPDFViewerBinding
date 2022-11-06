@@ -255,11 +255,14 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class NSString;
+@class UIView;
 
 SWIFT_CLASS_NAMED("SwiftBinding")
 @interface Binding : NSObject
 - (void)asyncWithParameters:(NSArray<NSString *> * _Nonnull)parameters callback:(StringCallback _Nonnull)callback;
 - (void)openPDFWithTitle:(NSString * _Nonnull)title url:(NSString * _Nonnull)url;
+- (UIView * _Nonnull)createPDFView SWIFT_WARN_UNUSED_RESULT;
+- (void)setPDFViewURLWithView:(UIView * _Nonnull)view url:(NSString * _Nonnull)url;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -528,11 +531,14 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class NSString;
+@class UIView;
 
 SWIFT_CLASS_NAMED("SwiftBinding")
 @interface Binding : NSObject
 - (void)asyncWithParameters:(NSArray<NSString *> * _Nonnull)parameters callback:(StringCallback _Nonnull)callback;
 - (void)openPDFWithTitle:(NSString * _Nonnull)title url:(NSString * _Nonnull)url;
+- (UIView * _Nonnull)createPDFView SWIFT_WARN_UNUSED_RESULT;
+- (void)setPDFViewURLWithView:(UIView * _Nonnull)view url:(NSString * _Nonnull)url;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

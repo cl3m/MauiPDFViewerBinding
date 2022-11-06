@@ -9,5 +9,7 @@
   <ItemGroup>
     <LibraryProjectZip Include="jars\binding-release.aar" />
   </ItemGroup>
-  
+  <ItemGroup>
+    <LibraryProjectZip Include="jars\com.github.afreakyelf.Pdf-Viewer-v1.0.8.aar" />
+  </ItemGroup>
 </Project>

@@ -12,6 +12,8 @@ import _StringProcessing
 @_inheritsConvenienceInitializers @objc(Binding) public class SwiftBinding : ObjectiveC.NSObject {
   @objc public func async(parameters: [Swift.String], callback: @escaping Binding.StringCallback)
   @objc public func openPDF(title: Swift.String, url: Swift.String)
+  @objc public func createPDFView() -> UIKit.UIView
+  @objc public func setPDFViewURL(view: UIKit.UIView, url: Swift.String)
   @objc override dynamic public init()
   @objc deinit
 }

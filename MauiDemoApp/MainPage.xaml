@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiDemoApp.MainPage">
+             xmlns:MauiDemoApp="clr-namespace:MauiDemoApp"
+            x:Class="MauiDemoApp.MainPage">
 
     <ScrollView>
         <VerticalStackLayout
@@ -27,6 +28,8 @@
                 SemanticProperties.Hint="Open a sample PDF"
                 Clicked="OnOpenPDFClicked"
                 HorizontalOptions="Center" />
+
+            <MauiDemoApp:PDFView HeightRequest="200" WidthRequest="200" Url="https://dagrs.berkeley.edu/sites/default/files/2020-01/sample.pdf"/>
 
         </VerticalStackLayout>
     </ScrollView>

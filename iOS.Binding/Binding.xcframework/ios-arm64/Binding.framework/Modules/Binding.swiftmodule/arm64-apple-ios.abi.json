@@ -40,6 +40,13 @@
       },
       {
         "kind": "Import",
+        "name": "PDFKit",
+        "printedName": "PDFKit",
+        "declKind": "Import",
+        "moduleName": "Binding"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -132,6 +139,62 @@
             "mangledName": "$s7Binding05SwiftA0C7openPDF5title3urlySS_SStF",
             "moduleName": "Binding",
             "objc_name": "openPDFWithTitle:url:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "createPDFView",
+            "printedName": "createPDFView()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Binding@objc(cs)Binding(im)createPDFView",
+            "mangledName": "$s7Binding05SwiftA0C13createPDFViewSo6UIViewCyF",
+            "moduleName": "Binding",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setPDFViewURL",
+            "printedName": "setPDFViewURL(view:url:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIView",
+                "printedName": "UIKit.UIView",
+                "usr": "c:objc(cs)UIView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@Binding@objc(cs)Binding(im)setPDFViewURLWithView:url:",
+            "mangledName": "$s7Binding05SwiftA0C13setPDFViewURL4view3urlySo6UIViewC_SStF",
+            "moduleName": "Binding",
+            "objc_name": "setPDFViewURLWithView:url:",
             "declAttributes": [
               "AccessControl",
               "ObjC"
